@@ -18,4 +18,4 @@ This is a personal portfolio website made only using **HTML** and **CSS** as par
 
 ## 🌐 Hosted Link
 
-[Portfolio](https://atrnl.github.io/UID_ProjectPhase1_AM.SC.U4CSE24007/#contact)
+[Portfolio](https://atrnl.github.io/UID_ProjectPhase1_AM.SC.U4CSE24007/)
