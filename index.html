@@ -1,0 +1,324 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                background-color: black;
+                background-image: url("c:/Users/Admin/UID_Project_Folder/CanvaPNG.png");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-position:initial;
+                background-attachment:fixed;
+                color: white;
+                text-align: center;
+                margin:1px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .section-heading {
+                scroll-margin-top: 50px;;
+            }
+            h2{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:rgb(165, 161, 161);
+                text-align: left;
+                font-size:370% ;
+                text-shadow: 5px 0px 5px rgb(167, 163, 163);
+                margin-top:5%
+            }
+            h3{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 250%;
+                
+            }
+            nav{
+                position:sticky;
+                top: 0;
+                width: 100%;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #888585;
+                text-align: right;
+                
+            }
+            nav li {
+                float: right;
+            
+            }
+            nav li a {   
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #111;
+            }
+            .nav-toggle {
+                display: none;
+            }
+            .hamburger {
+                display: none;
+                font-size: 20px;
+                color: white;
+                padding: 7px 0px;
+                background-color: #888585;
+                text-align: right;
+                padding-right:10px;
+            }
+        @media (max-width: 1063px) {
+            nav ul {
+                display: none;
+                flex-direction:column-reverse;
+                background-color: #888585;
+                width: 100%;
+            }
+            .hamburger{
+                display: block;
+            }
+            .nav-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+        }
+            .main_head
+            {
+                background-color:rgb(0, 38, 59);
+                padding:5%;
+                margin: 0% 0% 2% 0%;
+                font-size: 70px;
+                font-family: sans-serif;
+                font-weight:bold;
+                text-shadow: 6px 0px 6px rgb(133, 200, 224);
+                box-sizing: border-box;
+            }
+            .p_intro
+            {
+                text-shadow: 2px 0px 2px rgb(161, 161, 161);
+                font-size:1cm;
+                margin: 1%; 
+                padding:10%; 
+                text-align: justify; 
+                text-justify: inter-word;
+                color:rgb(151, 151, 151);
+            }
+            .skills_items{
+                background-color: rgb(40, 113, 116);
+                color:rgb(255, 255, 255);
+                width:30%;
+                margin: 20px;
+                overflow:hidden;
+                text-align:center;
+                float:left;
+            }
+            .projects_items{
+                background-color: rgb(102, 8, 131);
+                margin:20px;
+                float:left;
+                padding:3cm 2cm;
+                width:46%;
+                box-sizing:border-box;
+                color:white;
+                font-size: 110%;
+            }
+            a div:hover{
+                background-color: rgb(176, 1, 182);
+            }
+            .p_courses{
+                padding: 3%;
+                font-size: 150%;
+                background-color: rgb(2, 2, 99);
+                text-align: left;
+            }
+            .p_exp{
+                padding:3%;
+                font-size:150%;
+                text-align:left
+            }
+            div a:hover{
+                background-color: #141414;
+            }
+            .skills_image{
+                width: 100%;
+                height:6cm;
+                display:block;
+            }
+            .platform{
+                padding:50px;
+                color:white;
+            }
+            #ctfplatform a div:hover{
+                background-color: rgb(33, 194, 180);
+            }
+            footer {
+                width: 100%;
+                margin-bottom:-1px;
+                background-color: #797676;
+                padding: 10px 0px;  
+                margin-top: auto;  
+            }
+            .contact-icon {
+                height: 40px;  
+                border-radius: 10px;
+                margin-right:25px;
+                transition: transform 0.3s ease;
+            }
+            .contact-icon:hover {
+                transform: scale(1.3);
+            }
+        </style>
+    </head>
+    <body>
+     
+        <div class="main_head">Aspiring Web Development & Cybersecurity Enthusiast</div>
+
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger">&#9776;</label>
+
+            <ul class="nav-links">
+                <li><a href="#contact">CONTACT ME</a></li>
+                <li><a href="#Goals">FUTURE LEARNING & GOALS</a></li>
+                <li><a href="#CTF">CYBERSECURITY & CTF EXPERIENCE</a></li>
+                <li><a href="#Cources">COURSES & CERTIFICATIONS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+            </ul>
+        </nav>  
+
+        <p class="p_intro">I'm Anaswara. A Computer Science and Engineering student passionate about cybersecurity, coding, and web development. I love solving CTF challenges, building projects, and constantly exploring new tech. Welcome to my portfolio!</p>
+   
+        <section>
+        <h2 id="skills" class="section-heading">SKILLS</h2>
+        <h3>Technical Skills</h3>
+        
+        <div class="skills_items">
+            <img class="skills_image" alt="java" src="c:/Users/Admin/UID_Project_Folder/java.jpg">
+            <div style="padding:50px;"><strong style="font-size: 200%;">Java</strong></div>
+        </div> 
+        <div class="skills_items">
+            <img class="skills_image" alt="python" src="c:/Users/Admin/UID_Project_Folder/python.jpg">
+            <div style="padding:50px;"><strong style="font-size: 200%;">Python</strong></div>
+        </div>
+        <div class="skills_items">
+            <img class="skills_image" alt="html" src="c:/Users/Admin/UID_Project_Folder/html.jpg">
+            <div style="padding:50px;"><strong style="font-size: 200%;">HTML</strong></div>
+        </div>  
+        <div class="skills_items"> 
+            <img class="skills_image" src="c:/Users/Admin/UID_Project_Folder/css.jpg" alt="css">
+            <div style="padding:50px;"><strong style="font-size: 200%;">CSS</strong></div>
+        </div> 
+        
+            <h3 style="clear:left;padding-top:40px;">Soft Skills</h3>
+            
+            <div class="skills_items" style="padding:2cm 2cm;"><strong style="font-size: 200%;">Leadership</strong><br>Organized and participated in tech events & group projects<br><br></div>
+            <div class="skills_items" style="padding:2cm 2cm;"><strong style="font-size: 200%;">Adaptability</strong><br>Quickly learns and adjusts to new technologies and challenges</div>
+            <div class="skills_items" style="padding:2cm 2cm;"><strong style="font-size: 200%;">Teamwork</strong><br>Collaborates effectively in team projects, CTF competitions, and group research</div>
+            <div class="skills_items" style="padding:2cm 2cm;"><strong style="font-size: 200%;">Time Management</strong><br>Balanced multiple projects, coursework, and competitions<br><br></div>
+        </section>
+
+        <section style="grid-template-columns: 1fr 1fr; ">
+        <h2 style="clear:left; padding-top:12%;" id="projects">PROJECTS</h2>
+        
+            <a href="https://github.com/Atrnl/TicTacToe" target="_blank">
+            <div class="projects_items">
+            <strong style="font-size: 250%;">Tic Tac Toe</strong> <br> A simple yet fully functional game built in Java having two versions: Player vs Player and Player vs System. 
+           <br><br> </div>
+            </a>
+
+            <a href="https://github.com/Atrnl/ACM_bridgecourse" target="_blank">
+            <div class="projects_items">
+            <strong style="font-size: 250%;">DOS Blocker Firewall</strong> <br> A Python-based security tool designed to detect and block Denial-of-Service (DoS) attacks by monitoring network traffic and blocking malicious IPs.
+            </div>
+            </a>
+        </section>
+
+        <section>
+        <h2 style="clear:left; padding-top:12%;" id="Cources">COURSES & CERTIFICATIONS</h2>
+        <div>
+            <p class="p_courses" style="background-color:transparent ;">I have completed multiple courses that have strengthened my understanding of cybersecurity, networking, and web development. Some of them include:</p>
+        <h3>Web Development</h3>
+        <p class="p_courses">Learn HTML by Building a Cat Photo App - freeCodeCamp</p>
+        <p class="p_courses">Learn Basic CSS by Building a Cafe Menu - freeCodeCamp</p>
+        </div>
+
+        <div>
+        <h3>Cybersecurity & Reverse Engineering</h3>
+        <p class="p_courses"><strong>Reverse Engineering - pwn.college</strong><br>Hands-on experience in breaking down compiled programs </p>
+        <p class="p_courses" style="margin-bottom:0%;">TryHackMe courses:
+            <ul class="p_courses" type="none" style="margin-top:0%; padding-left:5cm; padding-right:5cm;text-align:center">
+                <li style="background-color:black; font-size:70%;"><strong style="font-size:150%"><br>Networking Concepts</strong><br><br>Understanding of network protocols, packet analysis, and security threats.<br><br></li><br>
+                <li style="background-color:black; font-size:70%;"><strong style="font-size:150%"><br>x86-64 Architecture</strong><br><br>Understanding CPU registers, memory management, function calls, and assembly for reverse engineering.<br><br></li><br>
+                <li style="background-color:black; font-size:70%;"><strong style="font-size:150%"><br>Search Skills</strong><br><br>Learning advanced search techniques, Google Dorking, and OSINT for efficient information gathering.<br><br></li><br>
+                <li style="background-color:black; font-size:70%;"><strong style="font-size:150%"><br>Forensic Imaging</strong><br><br>Creating and analyzing forensic disk images for digital investigations and data recovery.<br><br></li><br>
+                <li style="background-color:black; font-size:70%;"><strong style="font-size:150%"><br>Introduction to Docker</strong><br><br>Containerization and its role in DevOps & security.<br><br></li><br>
+                <li style="background-color:black; font-size:70%;"><strong style="font-size:150%"><br>OWASP Top 10 (2021)</strong><br><br>Learned about common web vulnerabilities and secure coding practices.<br><br></li><br>
+            </ul>
+        </p>
+        </div>
+
+        <p class="p_courses" style="background-color:transparent ;">These courses have enhanced my problem-solving skills and given me practical exposure to real-world security threats.</p>
+        </section>
+
+        <section>
+        <h2 style="padding-top:5%;" id="CTF">CYBERSECURITY & CTF EXPERIENCE</h2>
+        <p class="p_courses" style="background-color:transparent ;">I actively participate in Capture The Flag (CTF) competitions, where I solve cryptography, reverse engineering, and web security challenges. Through CTFs, I have developed a strong foundation in ethical hacking, Linux commands, and network security.</p>
+        <p class="p_exp">CTF Platforms I use:</p>
+            
+        <div class="skills_items" id="ctfplatform"> 
+        <a href="https://tryhackme.com/" style="text-decoration: none;" target="_blank">
+            <img class="skills_image" alt="tryhackme" src="c:/Users/Admin/UID_Project_Folder/tryhackme.jpg">  
+            <div class="platform"><strong style="font-size:150%">TryHackMe</strong><br>Hands-on security labs</div>
+        </a>
+        </div>
+        
+        <div class="skills_items" id="ctfplatform">
+        <a href="https://picoctf.org/" style="text-decoration: none;" target="_blank">
+            <img class="skills_image" alt="picoCTF" src="c:/Users/Admin/UID_Project_Folder/picoCTF.jpg">
+            <div class="platform"><strong style="font-size:150%">picoCTF</strong><br>Beginner-friendly security challenges</div>
+        </a>
+        </div>  
+        
+        <div class="skills_items" id="ctfplatform"> 
+        <a href="https://www.hackthebox.com/" style="text-decoration: none;" target="_blank">
+            <img class="skills_image" alt="hackthebox" style="background-color: white;" src="c:/Users/Admin/UID_Project_Folder/hackthebox.jpg">
+            <div class="platform"><strong style="font-size:150%;">HackTheBox</strong><br>Advanced penetration testing labs</div>
+        </a>
+        </div> 
+        
+            <p class="p_exp" style="clear:left;">Notable Competitions:</p>
+            <div class="skills_items" style="padding:2cm 2cm;"><strong style="font-size:150%"> SeaTF CTF (Conducted by NITK, Surathkal) </strong><br>Participated in various hacking challenges.</div>
+        <p class="p_exp"style="clear:left;">Current Progress:</p>
+            <div class="skills_items" style="padding:2cm 2cm;"><strong style="font-size:150%">Working on OverTheWire Bandit </strong></div>
+        </section>
+        
+        <section>
+        <h2 style="clear:left; padding-top:15%;" id="Goals">FUTURE LEARNING & GOALS</h2>
+        <p class="p_courses" style="background-color:transparent ;">I am always looking for ways to expand my skills and work on new challenges. My current goals include:</p>
+        <p class="p_courses" style="background-color: aqua; color:black;">Learning Assembly Language</p>
+        <p class="p_courses" style="background-color: aqua; color:black;">Exploring deeper concepts in cybersecurity and web development</p>
+        <p class="p_courses" style="background-color: aqua; color:black;">Future learning goals: Rust, Red Teaming & Blue Teaming, Network Traffic Analysis</p>
+        <p class="p_courses" style="background-color:transparent ;">I believe that continuous learning is key to growth, and I am excited to explore new technologies and security trends.</p>
+        <br>
+        </section>
+
+        <footer id="contact">
+            <p>Connect with me on:</p>
+            <a href="https://www.linkedin.com/in/anaswara-anil-2403b3282/" target="_blank" style="text-decoration: none;">
+                <img src="c:/Users/Admin/UID_Project_Folder/linkedin.jpg" alt="LinkedIn" class="contact-icon">
+            </a>
+            <a href="mailto:anaswaraanil246@gmail.com" target="_blank" style="text-decoration: none;">
+                <img src="c:/Users/Admin/UID_Project_Folder/mail.jpg" alt="email" class="contact-icon">
+            </a>
+        </footer>
+    </body>
+</html>
