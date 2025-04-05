@@ -3,7 +3,7 @@ html{
             }
             body{
                 background-color: black;
-                background-image: url("c:/Users/Admin/UID_Project_Folder/CanvaPNG.png");
+                background-image: url("images/CanvaPNG.png");
                 background-size:cover;
                 background-repeat: no-repeat;
                 background-position:initial;
@@ -14,7 +14,7 @@ html{
                 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
             .section-heading {
-                scroll-margin-top: 50px;;
+                scroll-margin-top: 50px;
             }
             h2{
                 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
